@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ParkModel from '../models/park'
 
 class NewTag extends Component {
 
