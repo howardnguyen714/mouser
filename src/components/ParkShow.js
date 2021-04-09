@@ -23,7 +23,7 @@ export default class ParkShow extends Component {
   fetchData = () => {
     ParkModel.show(this.state.currentPark).then(data => {
       // console.log(data.park)
-      this.setState({ park: data.park, }) // tag: "", tip: "" })
+      this.setState({ park: data.park, tag: "", tip: "" })
     })
   }
 
@@ -55,7 +55,7 @@ export default class ParkShow extends Component {
   }
 
   handleTipChange = (event) => {
-    console.log(event.target.value)
+    // console.log(event.target.value)
     this.setState({
       tip: event.target.value
     })
@@ -63,12 +63,12 @@ export default class ParkShow extends Component {
 
   render() {    
     let tags = this.state.park.tags !== undefined ? this.state.park.tags.map((tag, key) => {
-      console.log(tag)
+      // console.log(tag)
       return <Tag text = {tag.text} key={key}/>
     }):<></>
     
     let tips = this.state.park.tips !== undefined ? this.state.park.tips.map((tip, key) => {
-      console.log(tip)
+      // console.log(tip)
       return <Tip text = {tip.text} key={key}/>
     }):<></>
     
@@ -80,12 +80,12 @@ export default class ParkShow extends Component {
           <ul>
             { tags }
           </ul>
-          <NewTag handleChange={this.handleTagChange} handleSubmit={this.handleTagSubmit} />
+          <NewTag tag={this.state.tag} handleChange={this.handleTagChange} handleSubmit={this.handleTagSubmit} />
           <h3>Tips</h3>
           <ul>
             { tips }
           </ul>
-          <NewTip handleChange={this.handleTipChange} handleSubmit={this.handleTipSubmit} />
+          <NewTip tip={this.state.tip} handleChange={this.handleTipChange} handleSubmit={this.handleTipSubmit} />
       </div>
 
     )
