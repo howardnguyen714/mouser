@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 class NewTip extends Component {
 
   render() {
