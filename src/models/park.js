@@ -15,6 +15,17 @@ class ParkModel {
       })
     })
   }
+  static createTip = (parkId, newTip) => {
+    return fetch(`${url}/parks/${parkId}/createTip`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        tip: newTip
+      })
+    })
+  }
 }
 
 export default ParkModel
