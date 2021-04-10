@@ -73,19 +73,27 @@ export default class ParkShow extends Component {
     }):<></>
     
     return (
-      <div className="container">
-          <h2>{ this.state.park.name }</h2>
-          <p>{ this.state.park.description }</p>
-          <h3>Tags</h3>
-          <ul>
+      <div className="container pageContainer">
+        <h1>{ this.state.park.name }</h1>
+        <div className="row">
+          <div className="col-md-9">
+            <img src={this.state.park.imageUrl}/>
+          </div>
+          <div className="col-md-3">
+            <h5>Tags</h5>
             { tags }
-          </ul>
-          <NewTag tag={this.state.tag} handleChange={this.handleTagChange} handleSubmit={this.handleTagSubmit} />
-          <h3>Tips</h3>
-          <ul>
+            <NewTag tag={this.state.tag} handleChange={this.handleTagChange} handleSubmit={this.handleTagSubmit} />
+          </div>
+          
+        </div>
+        <div className="row">
+          <div className="col-md-9"> 
+            <p className="description">{ this.state.park.description }</p>
+            <h4>Tips</h4>
             { tips }
-          </ul>
-          <NewTip tip={this.state.tip} handleChange={this.handleTipChange} handleSubmit={this.handleTipSubmit} />
+            <NewTip tip={this.state.tip} handleChange={this.handleTipChange} handleSubmit={this.handleTipSubmit} />
+          </div>
+        </div>
       </div>
 
     )
