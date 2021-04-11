@@ -4,6 +4,11 @@ class ParkModel {
   static show = (parkId) => {
     return fetch(`${url}/parks/${parkId}`).then(res => res.json())
   }
+  
+  static showAllParks = () => {
+    return fetch(`${url}/parks`).then(res => res.json())
+  }
+  
   static createTag = (parkId, newTag) => {
     return fetch(`${url}/parks/${parkId}/createTag`, {
       method: "POST",
@@ -15,6 +20,7 @@ class ParkModel {
       })
     })
   }
+  
   static createTip = (parkId, newTip) => {
     return fetch(`${url}/parks/${parkId}/createTip`, {
       method: "POST",
