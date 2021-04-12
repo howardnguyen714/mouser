@@ -49,7 +49,9 @@ Mouser is an app that serves as a guide for vacationers planning their  trip to 
 ![Homepage Wireframe](https://raw.githubusercontent.com/howardnguyen714/mouser/main/wireframes%20%26%20screenshots/Landing.png)
 #### Page
 ![Page Wireframe](https://raw.githubusercontent.com/howardnguyen714/mouser/main/wireframes%20%26%20screenshots/Page.png)
+
 ## Entity Relationship Diagrams
+![ERD](https://raw.githubusercontent.com/howardnguyen714/mouser/main/wireframes%20%26%20screenshots/ERD.png)
 
 ## Known Issues
 
