@@ -34,8 +34,21 @@ Mouser is an app that serves as a guide for vacationers planning their  trip to 
 * As a user, I would like to attach images to the “gallery” of each page
 * As a user, I would like to be able to upload an image to accompany my pro tip
 
-## Wireframes
+## Screenshots
+#### Homepage
+![Homepage](https://raw.githubusercontent.com/howardnguyen714/mouser/main/wireframes%20%26%20screenshots/Home.png)
+#### Resorts Index
+![Resorts Index](https://raw.githubusercontent.com/howardnguyen714/mouser/main/wireframes%20%26%20screenshots/Resorts.png)
+#### Parks Index
+![Parks Index](https://raw.githubusercontent.com/howardnguyen714/mouser/main/wireframes%20%26%20screenshots/Parks.png)
+#### Page
+![Page](https://raw.githubusercontent.com/howardnguyen714/mouser/main/wireframes%20%26%20screenshots/Single%20Page.png)
 
+## Wireframes
+#### Homepage
+![Homepage Wireframe](https://raw.githubusercontent.com/howardnguyen714/mouser/main/wireframes%20%26%20screenshots/Landing.png)
+#### Page
+![Page Wireframe](https://raw.githubusercontent.com/howardnguyen714/mouser/main/wireframes%20%26%20screenshots/Page.png)
 ## Entity Relationship Diagrams
 
 ## Known Issues
