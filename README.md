@@ -1,6 +1,6 @@
 # Mouser
 
-Mouser is an app that serves as a guide for vacationers planning their  trip to one of the many Disney resorts. For every ride, shop, show, or  other attraction, there is a corresponding page where users can learn  more about it and contribute with their own tags and tip that can be  voted on by other users
+Mouser is an app that serves as a guide for vacationers planning their  trip to one of the many Disney resorts. For every ride, shop, show, or  other attraction, there is a corresponding page where users can learn  more about it and contribute with their own tags and tips that can be  voted on by other users
 
 ## Technologies used
 
