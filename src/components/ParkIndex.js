@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
 import ParkModel from '../models/park'
 import Park from "./Park"
-import ResortModel from '../models/resort'
-import Resort from "./Resort"
 
-export default class Home extends Component {
+export default class ParkIndex extends Component {
   state = {
     parks: {},
-    resorts: {}
   }
 
   componentDidMount() {
@@ -19,9 +16,6 @@ export default class Home extends Component {
     ParkModel.showAllParks().then(data => {
       this.setState({ parks: data })
     })
-    ResortModel.showAllResorts().then(data => {
-      this.setState({ resorts: data })
-    })
   }
   
   
@@ -29,17 +23,9 @@ export default class Home extends Component {
     let parks = this.state.parks.parks !== undefined ? this.state.parks.parks.map((park, key) => {
       return <Park park = {park} key={key}/>
     }):<></>
-    let resorts = this.state.resorts.resorts !== undefined ? this.state.resorts.resorts.map((resort, key) => {
-      return <Resort resort = {resort} key={key}/>
-    }):<></>
     return (
       <div className="container">
-        <h1>Mouser</h1>
-        <h2>Resorts</h2>
-        <div className="row">
-          { resorts }
-        </div>
-        <h2>Parks</h2>
+        <h1>Parks</h1>
         <div className="row">
           { parks }
         </div>

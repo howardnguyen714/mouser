@@ -12,10 +12,10 @@ export default class Navbar extends Component {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="#">Resorts</a>
+              <a className="nav-link" href="/resorts">Resorts</a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="#">Parks</a>
+              <a className="nav-link" href="/parks">Parks</a>
             </li>
           </ul>
         </div>

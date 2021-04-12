@@ -6,17 +6,17 @@ class NewTip extends Component {
       <div>
         <form onSubmit={this.props.handleSubmit}>
           <div className="form-input">
-            <div class="input-group mb-3">
+            <div className="input-group mb-3">
               <input 
                 type="text" 
-                class="form-control zero-radius" 
+                className="form-control zero-radius" 
                 placeholder="New Tip"
                 name="tag" 
                 onChange={event => this.props.handleChange(event)}
                 value={this.props.tip}
                 required/>
-              <div class="input-group-append">
-                <input class="btn btn-outline-secondary zero-radius" type="submit" value="Add"/>
+              <div className="input-group-append">
+                <input className="btn btn-outline-secondary zero-radius" type="submit" value="Add"/>
               </div>
             </div>
           </div>

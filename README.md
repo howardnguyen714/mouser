@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Mouser
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Mouser is an app that serves as a guide for vacationers planning their  trip to one of the many Disney resorts. For every ride, shop, show, or  other attraction, there is a corresponding page where users can learn  more about it and contribute with their own tags and tip that can be  voted on by other users
 
-## Available Scripts
+## Technologies used
 
-In the project directory, you can run:
+* React
+* React Router
+* Node.js
+* Express
+* MongoDB
+* SCSS
+* Bootstrap
 
-### `npm start`
+## Installation Steps
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Fork mouser and mouser-api
+* Install dependencies for both apps
+* Add a MongoDB URI to your .env file in your mouser-api
+* Seed database using seed.js in mouser-api
+* Start mouser using "npm start" and mouser-api using "npm run dev"
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## User Stories
 
-### `npm test`
+### MVP
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* As a user, I would like to be able to view pages of individual places in the resort.
+* As a user, I would like to be able to provide suggestions in the form of “tags” or “tips” to a page.
 
-### `npm run build`
+### Stretch
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* As a user, I would like to be able to “upvote” a tag or pro tip to show my agreement with its helpfulness.
+* As a user, I would like to be able to search for a page
+* As a user, I would like to attach images to the “gallery” of each page
+* As a user, I would like to be able to upload an image to accompany my pro tip
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Wireframes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Entity Relationship Diagrams
 
-### `npm run eject`
+## Known Issues
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* Sometimes, tags and tips do not display upon creation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Planned Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* "Gallery" sidebar for each page where users can upload their own images
+* "Related" section listing everything that is in that page (i.e. Inside Disneyland, there is Main Street U.S.A., Tomorrowland, Fantasyland, etc...)
+* "Upvote" feature for users to vote on tags and tips created by other users

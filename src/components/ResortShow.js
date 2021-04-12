@@ -22,7 +22,6 @@ export default class ResortShow extends Component {
 
   fetchData = () => {
     ResortModel.show(this.state.currentResort).then(data => {
-      // console.log(data.resort)
       this.setState({ resort: data.resort, tag: "", tip: "" })
     })
   }

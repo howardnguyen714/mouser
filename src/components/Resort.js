@@ -3,7 +3,7 @@ import React from 'react'
 export default function Resort(props) {
   let link=`/resorts/${props.resort._id}`
   return (
-    <a href={link} className="col-6">
+    <a href={link} className="col-sm-6">
       <div className="card">
         <img className="card-img-top" src={props.resort.imageUrl} />
         <div className="card-body">
