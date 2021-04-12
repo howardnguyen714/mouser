@@ -3,7 +3,7 @@ import React from 'react'
 export default function Park(props) {
   let link=`/parks/${props.park._id}`
   return (
-    <a href={link} class="col-6">
+    <a href={link} className="col-6">
       <div className="card">
         <img className="card-img-top" src={props.park.imageUrl} />
         <div className="card-body">
