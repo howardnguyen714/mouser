@@ -32,7 +32,7 @@ export default class ParkShow extends Component {
     // append new tag to ParkModel
     ParkModel.createTag(this.state.currentPark, this.state.tag)
     .then(() => {
-      this.setState({ tag: "" })
+      // this.setState({ tag: "" })
       this.fetchData()      
     })
   }
@@ -77,7 +77,7 @@ export default class ParkShow extends Component {
         <h1>{ this.state.park.name }</h1>
         <div className="row">
           <div className="col-md-9">
-            <img src={this.state.park.imageUrl}/>
+            <img src={this.state.park.imageUrl} alt=""/>
           </div>
           <div className="col-md-3">
             <h5>Tags</h5>

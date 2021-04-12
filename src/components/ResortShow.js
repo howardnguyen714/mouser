@@ -76,7 +76,7 @@ export default class ResortShow extends Component {
         <h1>{ this.state.resort.name }</h1>
         <div className="row">
           <div className="col-md-9">
-            <img src={this.state.resort.imageUrl}/>
+            <img src={this.state.resort.imageUrl} alt=""/>
           </div>
           <div className="col-md-3">
             <h5>Tags</h5>

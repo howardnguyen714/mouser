@@ -1,10 +1,12 @@
+$mainColor: #2394c0;
+
 @font-face {
   font-family: Waltograph;
   src: url('./waltograph42.otf') format("opentype");
 }
 
 body {
-  background-color: #2394c0;
+  background-color: $mainColor;
   font-family: Helvetica, sans-serif;
   .container {
     background-color: white;
@@ -20,8 +22,9 @@ img {
 .badge {
   margin: 0.2rem;
   font-weight: 500;
-  background-color: #2394c0;
+  background-color: $mainColor;
   color: white;
+  font-size: 1rem;
 }
 .navbar-brand {
   letter-spacing: 2px;
@@ -61,4 +64,15 @@ h5 {
   font-size: 13pt;
   font-weight: 400;
   letter-spacing: .5px;
+}
+
+#homeHeader {
+  font-family: Waltograph;
+  text-align: center;
+  font-size: 10rem;
+  margin-top: 50px;
+}
+
+#homeParksHeader {
+  margin-top: 40px;
 }

@@ -34,12 +34,12 @@ export default class Home extends Component {
     }):<></>
     return (
       <div className="container">
-        <h1>Mouser</h1>
+        <h1 id="homeHeader">Mouser</h1>
         <h2>Resorts</h2>
         <div className="row">
           { resorts }
         </div>
-        <h2>Parks</h2>
+        <h2 id="homeParksHeader">Parks</h2>
         <div className="row">
           { parks }
         </div>
